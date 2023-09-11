@@ -1,0 +1,83 @@
+.rightsection {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  background-color: #e8e8e8;
+  padding: 20px;
+}
+
+.header > img {
+  display: none;
+}
+
+.rightcontent {
+  width: 100%;
+  background-color: #f7ecdc;
+  height: calc(100vh - 110px);
+  position: relative;
+}
+
+.rightcontent > :last-child {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  padding: 20px;
+  background-color: #e8e8e8;
+}
+
+.scrollcontent {
+  position: absolute;
+  bottom: 220px;
+  top: 0;
+  overflow: scroll;
+}
+
+.textarea {
+  width: 100%;
+  border: none;
+  position: relative;
+  padding: 10px;
+  height: 200px;
+  font-size: 20px;
+}
+
+.arrow {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.date {
+  width: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .header > img {
+    display: block;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+}
